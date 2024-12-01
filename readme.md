@@ -10,5 +10,5 @@ https://fuenmayore.github.io/Actividad-GitHub/
 ```
 1. **Clona el repositorio**:
 ```bash
-git clone https://github.com/Fuenmayore/Actividad-Cliente.git
+git clone https://github.com/Fuenmayore/Actividad-GitHub.git
 ```
