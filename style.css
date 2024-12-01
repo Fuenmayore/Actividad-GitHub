@@ -1,0 +1,153 @@
+html body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+input, select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.welcome-section {
+    background-image: url('https://elrionegrero.com/wp-content/uploads/2024/09/salacine.jpg'); /* Cambia esta URL por una imagen de fondo de cine */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden; /* Para que el pseudo-elemento no desborde */
+}
+
+
+.welcome-section h1 {
+    font-size: 3rem;
+}
+.welcome-section p {
+    font-size: 1.5rem;
+}
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.movie {
+    background-color: #34495e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.movie p {
+    font-size: 14px;
+}
+
+canvas {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.navbar {
+    background-color: #343a40; /* Color de fondo oscuro */
+}
+
+.navbar a {
+    color: #ffffff; /* Color del texto blanco */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.navbar a:hover {
+    color: #ffc107; /* Color amarillo al pasar el mouse */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+}
+
+
+
+ /* Estilo para la marquee */
+ .marquee-container {
+    background-color: #222; /* Fondo oscuro */
+    color: #ffc107; /* Color amarillo */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    padding: 10px; /* Espaciado */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Sombra para efecto de luz */
+    white-space: nowrap; /* Evitar saltos de línea */
+    overflow: hidden; /* Esconder el desbordamiento */
+    position: relative; /* Posición relativa para el efecto de animación */
+    margin-top: 60px; /* Margen superior para evitar que se cubra por el navbar */
+}
+
+.marquee-container .text {
+    display: inline-block; /* Mostrar como bloque en línea */
+    animation: marquee 30s linear infinite; /* Animación para mover el texto */
+    font-family: 'Courier New', Courier, monospace; /* Fuente para el efecto pixelado */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); } /* Comienza fuera de la pantalla a la derecha */
+    100% { transform: translateX(-100%); } /* Termina fuera de la pantalla a la izquierda */
+}
+
+
+.modal-content {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.modal-header, .modal-footer {
+    border: none; /* Sin borde */
+}
+
+.modal-title {
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+}
+
+.modal-body {
+    font-size: 1rem; /* Tamaño de fuente del cuerpo */
+}
+
+#movie-details img {
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+h6 {
+    margin-top: 20px; /* Espaciado para el título del tráiler */
+    font-weight: bold; /* Negrita para el título */
+}
